@@ -10,4 +10,4 @@ public class Main
 		int b = skam.nextInt();
 		System.out.println ("Ответ: " + (a+b));
 	}
-}
+
