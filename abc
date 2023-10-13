@@ -3,11 +3,38 @@ import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
-		System.out.println("Введите два числа");
+		System.out.println("Введите два числа: ");
 		Scanner scan = new Scanner(System.in);
 		Scanner skam = new Scanner(System.in);
 		int a = scan.nextInt();
 		int b = skam.nextInt();
-		System.out.println ("Ответ: " + (a+b));
+		int c = a+b;
+		System.out.println ("Ответ: " + c);
+     System.out.print("Чтобы завершить программу, нажмите 1, введите другое число, чтобы продолжить.");
+     Scanner zkr = new Scanner(System.in);
+     int prg = zkr.nextInt();
+     while (prg<1 || c>prg) {
+     if (prg != 1) {
+     Scanner sc2 = new Scanner(System.in);
+     Scanner sc3 = new Scanner(System.in);
+     System.out.print("Введите 2 числа: ");
+     int z = sc2.nextInt();
+     int o = sc3.nextInt();
+     int v = z*o;
+     System.out.println("Результат: " + v);
+     System.out.print("Чтобы завершить программу, нажмите 1, введите другое число, чтобы продолжить: ");
+     Scanner rsh = new Scanner(System.in);
+     int rshn = rsh.nextInt();
+     if (rshn != 1){
+         System.out.println("Продолжение цикла");
+     } else {
+         System.out.println("Завершение работы"); break;
+     }
+         } else if (prg==1){
+             System.out.println("Закрытите программы"); break;
+         
+
+		    }
+		}
 	}
 }
